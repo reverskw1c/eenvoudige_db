@@ -18,18 +18,34 @@
 </head>
 <body>
     <?php
-        echo "<h1>Homepage eenvoudige database</h1>";
+        //Inladen van de code uit header.php
+        include "includes/header.php";
+        include "includes/functions.php";
 
-        echo "<p>test</p>";
+        ShowName("Evers");
+        ShowName("Vermeulen");
 
-        //Variabelen
-        $schoolName = "Koning Willem 1 College";
+        echo CalculateMonths(20, 10000);
 
-        // Mijn school is: ''
-        echo "Mijn school is: $schoolName";
+        echo CalculateMonths(270, 10000);
 
-        echo 6*6;
+        echo CalculateMonths(2000, 30000);
     ?>
+    <main>
+        <?php
+            echo "<h1>Homepage eenvoudige database</h1>";
+
+            echo "<p>test</p>";
+
+            //Variabelen
+            $schoolName = "Koning Willem 1 College";
+
+            // Mijn school is: ''
+            echo "Mijn school is: $schoolName";
+
+            echo 6*6;
+        ?>
+    </main>
 </body>
 </html>
 
