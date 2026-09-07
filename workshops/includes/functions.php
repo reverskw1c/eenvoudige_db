@@ -21,6 +21,18 @@ function ShowName($lastname)
 function CalculateMonths($month, $total)
 {
     $totalMonths = $total/$month;
+    $savedMoney = 0;
+    $countMonths = 0;
+
+    //Loop maken die leke maan laat zien hoeveel het bedrag is opgelopen
+    while($savedMoney < $total)
+    {
+        $savedMoney = $savedMoney + $month;
+        $countMonths = $countMonths + 1;
+//        $countMonths++;
+
+        echo "na $countMonths maanden is mijn spaarbedrag: $savedMoney <br>";
+    }
 
     return "Ik ben $totalMonths maanden bezig dit bedrag te betalen.";
 }

@@ -25,11 +25,9 @@
         ShowName("Evers");
         ShowName("Vermeulen");
 
-        echo CalculateMonths(20, 10000);
+        echo CalculateMonths(2000, 10000);
 
-        echo CalculateMonths(270, 10000);
 
-        echo CalculateMonths(2000, 30000);
     ?>
     <main>
         <?php
